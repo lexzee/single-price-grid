@@ -1,0 +1,63 @@
+@use 'base';
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  font-size: base.$body-copy;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  max-width: 350px;
+  position: relative;
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  margin: auto;
+  background-color: base.$section1-bg;
+
+  .section1 {
+    background-color: base.$section1-bg;
+    padding: 2rem;
+
+    .header{
+      font-size: base.$body-copy * 1.3;
+      color: base.$primary-cyan;
+      margin-bottom: 1.5rem;
+    }
+    .caption{
+      color: base.$primary-yellow;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .description{
+      color: base.$neutral-blue;
+      line-height: 2;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .section2 {
+    background-color: base.$section2-bg;
+    padding: 2rem;
+  }
+
+  .section3 {
+    background-color: base.$section3-bg;
+    padding: 2rem;
+  }
+}
+
+// .section1 {
+//   background-color: base.$section1-bg;
+// }
