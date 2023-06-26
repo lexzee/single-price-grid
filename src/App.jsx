@@ -7,7 +7,7 @@ function App() {
       <div className="App">
         <div className="section1">
           <h1 className="header">Join our community</h1>
-          <p className="caption">30-day, hassle-free money back guarantee</p>
+          <p className="caption my-1">30-day, hassle-free money back guarantee</p>
           <p className="description">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
         </div>
         <div className="section2">

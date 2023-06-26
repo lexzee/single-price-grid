@@ -1,0 +1,41 @@
+#root {
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  font-size: $body-copy;
+  display: flex;
+  flex-direction: column;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//margin and padding classes
+$spaceAmounts: (1,2,3,4,5);
+
+@each $space in $spaceAmounts {
+  .m-#{$space} {
+    margin: #{$space}rem + 0.5;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+  .px-#{$space} {
+    padding: 0 #{$space}rem;
+  }
+}
