@@ -1,0 +1,36 @@
+@media(min-width: 780px){
+  .App{
+    min-width: 660px;
+    max-width: 660px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+
+    .section1{
+      grid-column: span 3;
+      padding: 2.5rem;
+
+      .description{
+        margin-bottom: 0;
+        // padding-right: 2rem;
+        max-width: 95%;
+      }
+    }
+
+    .section2{
+      padding: 2.5rem;
+      border-radius: 0 0 0 .5rem;
+    }
+
+    .section3{
+      padding: 2.5rem;
+      border-radius: 0 0 .5rem 0;
+
+      .description{
+        margin: 0;
+        margin-top: 1rem;
+        line-height: 1.4;
+      }
+    }
+  }
+}
